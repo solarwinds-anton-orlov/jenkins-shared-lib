@@ -15,6 +15,11 @@ def call(body) {
                     MPLModule()
                 }
             }
+            stage('Publish') {
+                steps {
+                    MPLModule()
+                }
+            }
             stage('Deploy') {
                 steps {
                     MPLModule()

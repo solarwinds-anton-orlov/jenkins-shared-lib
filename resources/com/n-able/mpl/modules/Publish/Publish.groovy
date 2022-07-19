@@ -1,0 +1,1 @@
+echo "Artefact publishing should be here..."
