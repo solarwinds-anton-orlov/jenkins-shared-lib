@@ -8,6 +8,7 @@ def call(body) {
             stage('Test') {
                 steps {
                     MPLModule()
+                    MPLModule('Vulnerable')
                 }
             }
             stage('Build') {
