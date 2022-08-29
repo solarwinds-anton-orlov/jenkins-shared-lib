@@ -2,23 +2,15 @@ def call(body) {
     MPLInit()
 
     stage('Test') {
-        steps {
-            MPLModule()
-        }
+        MPLModule()
     }
     stage('Build') {
-        steps {
-            MPLModule()
-        }
+        MPLModule()
     }
     stage('Publish') {
-        steps {
-            MPLModule()
-        }
+        MPLModule()
     }
     stage('Deploy') {
-        steps {
-            MPLModule()
-        }
+        MPLModule()
     }
 }
