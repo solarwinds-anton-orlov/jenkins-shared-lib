@@ -1,6 +1,4 @@
-def call(String config = null) {
-  // Using the latest release MPL and adding the custom path to find modules
-  echo "Individual init!"
+def call() {
   library('mpl')
   MPLModulesPath('com/n-able/mpl')
 }

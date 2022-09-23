@@ -1,6 +1,16 @@
 def call(body) {
     MPLInit()
 
+    def MPL = MPLPipelineConfig(body, [
+        agent_label: 'any',
+        modules: [
+            Test: [:],
+            Build: [:],
+            Publish: [:],
+            Deploy: [:]
+        ]
+    ])
+
     stage('Test') {
         MPLModule()
     }
